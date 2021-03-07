@@ -230,7 +230,7 @@
 
   $(function(){
     // socket.io 서버에 접속한다
-    var socket = io("http://localhost:5000/");
+    var socket = io("https://suhwan-auction-server.herokuapp.com/");
     var user_name = prompt("닉네임을 설정해주세요");
     // 서버로 자신의 정보를 전송한다.
     socket.emit("login", {
